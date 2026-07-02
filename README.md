@@ -42,7 +42,7 @@ In a hotel, every department (kitchen, restaurant, housekeeping, maintenance) ge
 - **calcularVencida** – Automatically sets status to "Overdue" when due date has passed
 
 ### App Screenshot
-*(Add screenshot here)*
+![Fiori Elements Preview](SAP%20FIORI.png)
 
 ---
 
