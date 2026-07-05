@@ -89,5 +89,45 @@ In a hotel, goods received from suppliers (food, cleaning products, maintenance 
 
 ---
 
-## Project 3 – Purchasing & Payments Integration
-*Coming soon*
+## Project 3 – Purchasing & Payments Integration (MM / FI / RAP)
+
+### Business Context
+In a hotel, before placing a purchase order, multiple suppliers are contacted for quotes on the same product. The best quote is selected based on price and conditions, a purchase order is generated, and once goods are received and the invoice arrives, the payment order is issued. This project digitizes that complete procurement cycle.
+
+### Technical Stack
+- SAP RAP (Restful ABAP Programming Model)
+- Core Data Services (CDS) – Interface View + Projection View
+- Fiori Elements (List Report)
+- OData V4
+- SAP BTP ABAP Environment
+
+### Artifacts Created
+| Artifact | Name | Description |
+|---|---|---|
+| Database Table | `ZORDEN_COMPRA` | Purchase orders by supplier |
+| Database Table | `ZCOTIZACION` | Supplier quotations |
+| CDS Interface View | `ZI_OrdenCompra` | Root view entity for purchase orders |
+| CDS Projection View | `ZC_OrdenCompra` | Fiori UI annotations for purchase orders |
+| CDS Interface View | `ZI_Cotizacion` | Root view entity for quotations |
+| CDS Projection View | `ZC_Cotizacion` | Fiori UI annotations for quotations |
+| Behavior Definition | `ZI_ORDENCOMPRA` | Managed purchase order behavior |
+| Behavior Definition | `ZC_ORDENCOMPRA` | Projection with create/update/delete |
+| Behavior Definition | `ZI_COTIZACION` | Managed quotation behavior |
+| Behavior Definition | `ZC_COTIZACION` | Projection with create/update/delete |
+| Behavior Implementation | `ZBP_I_ORDENCOMPRA` | Purchase order business logic |
+| Behavior Implementation | `ZBP_I_COTIZACION` | Quotation business logic |
+| Service Definition | `ZUI_ORDENCOMPRA` | Exposes purchase order entity |
+| Service Binding | `ZUI_ORDENCOMPRA_O4` | OData V4, published |
+| Service Definition | `ZUI_COTIZACION` | Exposes quotation entity |
+| Service Binding | `ZUI_COTIZACION_O4` | OData V4, published |
+
+### Business Logic Implemented
+- Supplier quotations tracked per product with selection flag (S = Selected, N = Rejected)
+- Purchase orders linked to their winning quotation via `CotizacionId`
+- Order status tracked (Pending / Received) connecting to stock receipt (Project 2)
+- Full procurement cycle: Quotation → Purchase Order → Goods Receipt → Invoice → Payment
+
+### App Screenshots
+![Órdenes de Compra](orden-compra-preview.png)
+
+![Cotizaciones](cotizacion-preview.png)
