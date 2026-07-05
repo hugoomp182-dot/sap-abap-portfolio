@@ -8,7 +8,7 @@
 
 ## About This Portfolio
 
-I work in purchasing and accounting at a hotel. These projects are based on real operational workflows I manage daily, built to demonstrate SAP ABAP development skills for junior/associate consultant roles.
+I work in purchasing and accounting at a hotel. These projects are based on real operational workflows I manage daily, built to demonstrate SAP ABAP development skills for junior/associate consultant roles. All projects are built using the modern SAP S/4HANA Cloud development stack (RAP, CDS, Fiori Elements, OData V4) on SAP BTP ABAP Environment.
 
 ---
 
@@ -23,6 +23,7 @@ In a hotel, every department (kitchen, restaurant, housekeeping, maintenance) ge
 - Fiori Elements (List Report)
 - OData V4
 - SAP BTP ABAP Environment
+- SAP S/4HANA Cloud (compatible development stack)
 
 ### Artifacts Created
 | Artifact | Name | Description |
@@ -46,7 +47,6 @@ In a hotel, every department (kitchen, restaurant, housekeeping, maintenance) ge
 
 ---
 
-
 ## Project 2 – Goods Receipt & Stock Management (MM / RAP)
 
 ### Business Context
@@ -58,6 +58,7 @@ In a hotel, goods received from suppliers (food, cleaning products, maintenance 
 - Fiori Elements (List Report)
 - OData V4
 - SAP BTP ABAP Environment
+- SAP S/4HANA Cloud (compatible development stack)
 
 ### Artifacts Created
 | Artifact | Name | Description |
@@ -100,6 +101,7 @@ In a hotel, before placing a purchase order, multiple suppliers are contacted fo
 - Fiori Elements (List Report)
 - OData V4
 - SAP BTP ABAP Environment
+- SAP S/4HANA Cloud (compatible development stack)
 
 ### Artifacts Created
 | Artifact | Name | Description |
