@@ -133,3 +133,11 @@ In a hotel, before placing a purchase order, multiple suppliers are contacted fo
 ![Órdenes de Compra](orden-compra-preview.png)
 
 ![Cotizaciones](cotizacion-preview.png)
+
+---
+
+## Project 4 – Touchless Procurement – Supply Request App
+
+Separate repository: [sap-project4-touchless](https://github.com/HUGOOMP93/sap-project4-touchless)
+
+Each hotel sector submits supply requests directly through a Fiori app using pre-negotiated supplier pricing. Built with SAP RAP, CDS Views, Fiori Elements and OData V4 on SAP BTP.
